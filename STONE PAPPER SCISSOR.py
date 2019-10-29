@@ -2,15 +2,15 @@ import random
 l=["STONE","PAPER","SCISSOR"]
 print("Welcome ")
 x = int(input("NO OF TURNS: "))
-print("CHOOSE STONE, PAPER, SCISSOR")
+print("ENTER: (1 FOR STONE)\n(2 FOR PAPER)\n(3 FOR SCISSOR)")
 
 u=0
 c=0
 i=1
 while  (i<=x):
     print("User turn:")
-    y= input()
-    
+    a= int(input())
+    y=l[a-1]
     print("Computer Choosen: ")
     t=random.randrange(3)
     print(l[t])
